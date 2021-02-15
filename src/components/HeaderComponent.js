@@ -32,7 +32,7 @@ class Header extends Component {
     }
 
     handleLogin(event) {
-        console.log(`Username: ${this.username.value} Password:${this.password.value}`);
+        alert(`Username: ${this.username.value} Password:${this.password.value}`);
         this.toggleModal();
         event.preventDefault();
     }
@@ -52,7 +52,7 @@ class Header extends Component {
                 </Jumbotron>
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/elephants-holding-tusks.jpg" width="199" alt="Elephant Pottery" /></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/elephants-holding-tusks.jpg" height="50" alt="Elephant Pottery" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
@@ -64,7 +64,7 @@ class Header extends Component {
 
                                 <NavItem>
                                     <NavLink className="nav-link" to="/Workshops">
-                                        <i className="fa fa-list fa-lg" /> Workshops
+                                        <i className="fa fa-flask fa-lg" /> Workshops
                                     </NavLink>
                                 </NavItem>
 
