@@ -3,6 +3,7 @@ import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem, Jumbotron,
     Button, Modal, ModalHeader, ModalBody,
     Form, FormGroup, Input, Label } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+import Carousel from './CarouselComponent';
 
 
 class Header extends Component {
@@ -43,6 +44,9 @@ class Header extends Component {
                 <Jumbotron fluid>
                     <div className="container">
                         <div className="row">
+                            <div className="col-md-4">
+                                <img src="assets/images/elephants-holding-tusks.jpg" height="200" alt="hey"></img>
+                            </div>
                             <div className="col">
                                 <h1>Elephant Pottery Studio</h1>
                                 <h2>Come Clay Around</h2>
@@ -52,7 +56,7 @@ class Header extends Component {
                 </Jumbotron>
                 <Navbar dark sticky="top" expand="md">
                     <div className="container">
-                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/elephants-holding-tusks.jpg" height="50" alt="Elephant Pottery" /></NavbarBrand>
+                        <NavbarBrand className="mr-auto" href="/"><img src="/assets/images/WhiteElephant.jpg" height="50" alt="Elephant Pottery" /></NavbarBrand>
                         <NavbarToggler onClick={this.toggleNav} />
                         <Collapse isOpen={this.state.isNavOpen} navbar>
                             <Nav navbar>
