@@ -122,10 +122,9 @@ class Contact extends Component {
                     </div>
 
                     {/* contact form */}
-                    {/* I'd love to put this in a modal */}
                     <div className="row row-content">
                         <div className="col-12">
-                            <h2>Send us your Feebleback</h2>
+                            <h2>Send us your Feedback</h2>
                             <hr />
                         </div>
                     </div>
